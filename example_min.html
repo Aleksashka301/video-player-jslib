@@ -5,12 +5,15 @@
   <link rel="stylesheet" href="font-awesome.min.css">
   <meta charset="utf-8">
   <style type="text/css">
-    button {
+    .container-buttons{
+      background: black;
+    }
+    .btn {
       border-style: none;
       cursor: pointer;
       background-color: transparent;
     }
-    i {
+    .icon-btn {
       color: white;
       padding-top: 3px;
     }
@@ -20,12 +23,12 @@
   <div id="player" style="width: 800px; height: 600px;">
     <div class="js-video-container" style="width: 100%; height: 100%"></div>
     <!-- Here can be placed player controls: play and volume buttons -->
-      <div style="background: black;">
-        <button class="js-play-button">
-          <i class="fa fa-play" aria-hidden="true"></i>
+      <div class="container-buttons">
+        <button class="js-play-button btn">
+          <i class="fa fa-play icon-btn" aria-hidden="true"></i>
         </button>
-        <button class="js-pause-button">
-          <i class="fa fa-pause" aria-hidden="true"></i>
+        <button class="js-pause-button btn">
+          <i class="fa fa-pause icon-btn" aria-hidden="true"></i>
         </button>
       </div>
   </div>

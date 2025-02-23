@@ -28,8 +28,15 @@
       color: white;
       font-size: 20px;
     }
-    .stub {
+    .block-progress {
+      background-color: grey;
+      height: 10px;
+      margin: auto;
       flex-grow: 1;
+    }
+    .progress-slider {
+      background-color: red;
+      height: 100%;
     }
   </style>
 </head>
@@ -50,7 +57,9 @@
         <button class="js-volume-button btn">
           <i class="fa fa-volume-off icon-btn" aria-hidden="true"></i>
         </button>
-        <div class="stub"></div>
+        <div class="js-progress block-progress">
+          <div class="js-progress-slider progress-slider"></div>
+        </div>
         <button class="js-fullscreen-button btn">
           <i class="fa fa-expand icon-btn" aria-hidden="true"></i>
         </button>

@@ -13,7 +13,7 @@
 
 Два рабочих примера:
 
-- Страница с минимальными настройками — [index.html](./index.html)
+- Страница с минимальными настройками — [index.html](https://aleksashka301.github.io/video-player-jslib/)
 - Страница с максимальными настройками — [example_max.html](./example_max.html)
 
 ## Как подключить

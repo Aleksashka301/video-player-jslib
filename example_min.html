@@ -14,6 +14,8 @@
     }
     .container-buttons{
       background: black;
+      display: flex;
+      flex-direction: row;
     }
     .btn {
       min-width: 30px;
@@ -25,6 +27,9 @@
     .icon-btn {
       color: white;
       font-size: 20px;
+    }
+    .stub {
+      flex-grow: 1;
     }
   </style>
 </head>
@@ -44,6 +49,10 @@
         </button>
         <button class="js-volume-button btn">
           <i class="fa fa-volume-off icon-btn" aria-hidden="true"></i>
+        </button>
+        <div class="stub"></div>
+        <button class="js-fullscreen-button btn">
+          <i class="fa fa-expand icon-btn" aria-hidden="true"></i>
         </button>
       </div>
   </div>

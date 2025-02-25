@@ -12,29 +12,33 @@
       display: flex;
       flex-direction: column;
     }
-    .container-buttons{
+    .player{
+      flex-grow: 1;
+    }
+    .player-buttons{
       background: black;
       display: flex;
       flex-direction: row;
     }
-    .btn {
+    .player-btn {
       min-width: 30px;
       margin: 5px;
       border-style: none;
       cursor: pointer;
       background-color: transparent;
     }
-    .icon-btn {
+    .player-btn i {
       color: white;
       font-size: 20px;
     }
-    .block-progress {
+    .pl-block-progress {
       background-color: grey;
       height: 10px;
       margin: auto;
       flex-grow: 1;
+      cursor: pointer;
     }
-    .progress-slider {
+    .pl-progress-slider {
       background-color: red;
       height: 100%;
     }
@@ -42,26 +46,26 @@
 </head>
 <body>
   <div id="player" class="container-player">
-    <div class="js-video-container" style="flex-grow: 1;"></div>
+    <div class="js-video-container player"></div>
     <!-- Here can be placed player controls: play and volume buttons -->
-      <div class="container-buttons">
-        <button class="js-play-button btn">
-          <i class="fa fa-play icon-btn" aria-hidden="true"></i>
+      <div class="player-buttons">
+        <button class="js-play-button player-btn">
+          <i class="fa fa-play" aria-hidden="true"></i>
         </button>
-        <button class="js-pause-button btn">
-          <i class="fa fa-pause icon-btn" aria-hidden="true"></i>
+        <button class="js-pause-button player-btn">
+          <i class="fa fa-pause" aria-hidden="true"></i>
         </button>
-        <button class="js-mute-button btn">
-          <i class="fa fa-volume-up icon-btn" aria-hidden="true"></i>
+        <button class="js-mute-button player-btn">
+          <i class="fa fa-volume-up" aria-hidden="true"></i>
         </button>
-        <button class="js-volume-button btn">
-          <i class="fa fa-volume-off icon-btn" aria-hidden="true"></i>
+        <button class="js-volume-button player-btn">
+          <i class="fa fa-volume-off" aria-hidden="true"></i>
         </button>
-        <div class="js-progress block-progress">
-          <div class="js-progress-slider progress-slider"></div>
+        <div class="js-progress pl-block-progress">
+          <div class="js-progress-slider pl-progress-slider"></div>
         </div>
-        <button class="js-fullscreen-button btn">
-          <i class="fa fa-expand icon-btn" aria-hidden="true"></i>
+        <button class="js-fullscreen-button player-btn">
+          <i class="fa fa-expand" aria-hidden="true"></i>
         </button>
       </div>
   </div>

@@ -22,7 +22,7 @@
     }
     .player-btn {
       min-width: 30px;
-      margin: 5px;
+      margin: 4px;
       border-style: none;
       cursor: pointer;
       background-color: transparent;
@@ -30,6 +30,9 @@
     .player-btn i {
       color: white;
       font-size: 20px;
+    }
+    .mute-btn {
+      margin-left: 2px;
     }
     .pl-block-progress {
       background-color: grey;
@@ -49,16 +52,16 @@
     <div class="js-video-container player"></div>
     <!-- Here can be placed player controls: play and volume buttons -->
       <div class="player-buttons">
-        <button class="js-play-button player-btn">
+        <button class="js-play-button player-btn mute-btn">
           <i class="fa fa-play" aria-hidden="true"></i>
         </button>
-        <button class="js-pause-button player-btn">
+        <button class="js-pause-button player-btn mute-btn">
           <i class="fa fa-pause" aria-hidden="true"></i>
         </button>
-        <button class="js-mute-button player-btn">
+        <button class="js-mute-button player-btn mute-btn">
           <i class="fa fa-volume-up" aria-hidden="true"></i>
         </button>
-        <button class="js-volume-button player-btn">
+        <button class="js-volume-button player-btn mute-btn">
           <i class="fa fa-volume-off" aria-hidden="true"></i>
         </button>
         <div class="js-progress pl-block-progress">

@@ -4,20 +4,24 @@
   <title>Пример подключения плеера</title>
   <meta charset="utf-8">
   <link rel="stylesheet" href="./font-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
   <style type="text/css">
-    .container-player{
+    .container-player {
       width: 800px;
       height: 600px;
       box-shadow: 0 0 20px rgba(0,0,0,1);
       display: flex;
       flex-direction: column;
     }
-    .player{
+    .player {
       flex-grow: 1;
     }
-    .player-buttons{
+    .player-buttons {
+      height: 40px;
       background: black;
       display: flex;
+      justify-content: center;
+      align-items: center;
       flex-direction: row;
     }
     .player-btn {
@@ -31,8 +35,10 @@
       color: white;
       font-size: 20px;
     }
-    .mute-btn {
-      margin-left: 2px;
+    .player-time {
+      color: white;
+      font-family: "Roboto", sans-serif;
+      font-weight: 400;
     }
     .pl-block-progress {
       background-color: grey;
@@ -52,21 +58,23 @@
     <div class="js-video-container player"></div>
     <!-- Here can be placed player controls: play and volume buttons -->
       <div class="player-buttons">
-        <button class="js-play-button player-btn mute-btn">
+        <button class="js-play-button player-btn">
           <i class="fa fa-play" aria-hidden="true"></i>
         </button>
-        <button class="js-pause-button player-btn mute-btn">
+        <button class="js-pause-button player-btn">
           <i class="fa fa-pause" aria-hidden="true"></i>
         </button>
-        <button class="js-mute-button player-btn mute-btn">
+        <button class="js-mute-button player-btn">
           <i class="fa fa-volume-up" aria-hidden="true"></i>
         </button>
-        <button class="js-volume-button player-btn mute-btn">
+        <button class="js-volume-button player-btn">
           <i class="fa fa-volume-off" aria-hidden="true"></i>
         </button>
+        <div class="js-current-time player-time player-btn"></div>
         <div class="js-progress pl-block-progress">
           <div class="js-progress-slider pl-progress-slider"></div>
         </div>
+        <div class="js-duration player-time player-btn"></div>
         <button class="js-fullscreen-button player-btn">
           <i class="fa fa-expand" aria-hidden="true"></i>
         </button>

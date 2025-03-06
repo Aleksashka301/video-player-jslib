@@ -41,15 +41,30 @@
       font-weight: 400;
     }
     .pl-block-progress {
+      border-radius: 4px;
       background-color: grey;
-      height: 10px;
-      margin: auto;
+      height: 5px;
       flex-grow: 1;
       cursor: pointer;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
     }
     .pl-progress-slider {
+      border-radius: 4px;
       background-color: red;
       height: 100%;
+    }
+    .player-slider {
+      max-width: 10px;
+      min-width: 10px;
+      height: 10px;
+      background-color: red;
+      border-radius: 10px;
+      border-style: solid;
+      border-width: 3px;
+      border-color: white;
+      flex-grow: 1;
     }
   </style>
 </head>
@@ -73,6 +88,7 @@
         <div class="js-current-time player-time player-btn"></div>
         <div class="js-progress pl-block-progress">
           <div class="js-progress-slider pl-progress-slider"></div>
+          <div class="player-slider"></div>
         </div>
         <div class="js-duration player-time player-btn"></div>
         <button class="js-fullscreen-button player-btn">
